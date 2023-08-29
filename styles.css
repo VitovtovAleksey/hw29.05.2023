@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+#skills-checkboxes input[type="checkbox"],
+#skills-checkboxes label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.task1 {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #FBF2E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.task1 div {
+  padding: 5px;
+}
+
+.task1 label, .task2 label, .task3 label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.remember-me input {
+  margin-left: 10px;
+}
+
+.submit {
+  width: 100%;
+}
+
+.forgot-password {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 14px;
+}
+
+.task2 {
+  width: 500px;
+  margin: 10px auto;
+  background-color: #FBF2E9;
+  padding: 10px;
+}
+
+.task2 h2, .task3 h2, .task4 h2, .task5 h2 {
+  text-align: center;
+}
+
+.task2 .submit, .task3 .submit {
+  margin-top: 10px;
+}
+
+.task2 .submit input, .task3 .submit input {
+  width: 100%;
+  padding: 1px;
+}
+
+.task3, .task4, .task5 {
+  width: 500px;
+  margin: 10px auto;
+  background-color: #FBF2E9;
+  padding: 10px;
+}
+
+.task3 .flex-between {
+  margin-bottom: 10px;
+}
+
+.task2 input, .task3 input[type="text"], .task3 select, .task3 input[type="date"], .task3 .gender {
+  width: 230px;
+}
+
+.task3 .flex {
+  justify-content: left;
+}
+
+.task3 .gender input, .task3 .skills input {
+  margin-right: 3px;
+  margin-left: 10px;
+}
+
+.task3 #result table td {
+  border: solid 1px #464646;
+  padding: 5px;
+}
+
+.task3 #result table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task4 table {
+  width: 50%;
+  text-align: center;
+}
+
+.task4 .form-add-color {
+  align-items: center;
+  justify-content: center;
+}
+
+.task4 .form-add-color div {
+  border: solid 1px #494949;
+  padding: 5px 10px;
+}
+
+.task4 .form-add-color input {
+  height: 30px;
+  width: 40px;
+  border: none;
+  outline: none;
+  border-top: solid 1px #494949;
+  border-bottom: solid 1px #494949;
+  text-align: center;
+}
+
+.task4 .form-add-color input:last-child {
+  border-right: solid 1px #494949;
+}
+
+.task4 input[type="submit"] {
+  margin-top: 10px;
+  width: 46%;
+}
+
+.task4 #added-colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-color {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 25px;
+  background-color: #fff;
+  margin-left: 12px;
+}
+
+.example-color div:first-child {
+  height: 24px;
+  width: 25px;
+}
+
+.example-color div:last-child {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.task5 .flex {
+  margin-top: 10px;
+}
+
+.task5 .flex > div {
+  width: 120px;
+}
+
+.task5 input[type="submit"] {
+  margin-top: 10px;
+  width: calc(100% - 10px);
+}
+
+.task5 .flex input {
+  width: 350px;
+}
+
+.task5 hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.task5 #qustions .test {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

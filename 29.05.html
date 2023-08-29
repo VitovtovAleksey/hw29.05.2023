@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="urf8">
+    <title>Home work</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Ссылка на файл стилей -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+<!-- Задание 1 -->
+<div class="task1">
+    <h2>Task 1</h2>
+    <form id="login-form">
+        <div>
+            <label for="task1-username">Your login:</label>
+            <input type="text" id="task1-username" name="username" required>
+        </div>
+        <div>
+            <label for="task1-password">Your password:</label>
+            <input type="password" name="password" id="task1-password" required>
+        </div>
+        <div class="remember-me">
+            <label for="remember">Remember me</label>
+            <input type="checkbox" id="remember" name="remember">
+        </div>
+        <div>
+            <input type="submit" class="submit" value="Sign in">
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+    </form>
+</div>
+
+
+<!-- Задание 2 -->
+<div class="task2">
+    <h2>Task 2</h2>
+    <form id="registration-form">
+        <div class="flex-between">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="login">Логин:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+        </div>
+        <div class="flex-between">
+            <div>
+                <label for="task1-password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="confirm-password">Повторите пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+</div>
+
+
+<!-- Задание 3 -->
+<div class="task3">
+    <h2>Task3</h2>
+    <form id="user-info">
+        <div class="flex-between">
+            <div>
+                <label for="firstname">Firstname:</label>
+                <input type="text" name="firstname" id="firstname" required>
+            </div>
+            <div>
+                <label for="lastname">Lastname:</label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div>
+        </div>
+        <div class="flex-between">
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" required>
+            </div>
+            <div class="flex gender">
+                <label>Gender:</label>
+                <div class="flex">
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div class="flex">
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        </div>
+        <div class="flex-between">
+            <div>
+                <label for="country3">Country:</label>
+                <select name="country" id="country3" required>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <select name="city" id="city" required>
+                    <option value="Dnipro">Dnipro</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex skills">
+            <label>Skills:</label>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="html" id="skills-html" class="skills">
+                <label for="skills-html">HTML</label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="css" id="skills-css" class="skills">
+                <label for="skills-css">CSS</label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="js" id="skills-js" class="skills">
+                <label for="skills-js">JS</label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="php" id="skills-php" class="skills">
+                <label for="skills-php">PHP</label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="c++" id="skills-c++" class="skills">
+                <label for="skills-c++">C++</label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="java" id="skills-java" class="skills">
+                <label for="skills-java">JAVA</label>
+            </div>
+            <div class="flex">
+                <input type="checkbox" name="skills[]" value="c#" id="skills-c#" class="skills">
+                <label for="skills-c#">C#</label>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Save">
+        </div>
+    </form>
+    <br>
+    <div id="result">
+    </div>
+</div>
+
+<!-- Задание 4 -->
+<div class="task4">
+    <h2>Task4</h2>
+    <div class="flex form-add-color">
+        <div>
+            R
+        </div>
+        <input type="number" name="r" min="0" max="255" step="1">
+        <div>
+            G
+        </div>
+        <input type="number" name="g" min="0" max="255" step="1">
+        <div>
+            B
+        </div>
+        <input type="number" name="b" min="0" max="255" step="1">
+    </div>
+    <div class="center">
+        <input type="submit" value="Add color">
+    </div>
+    <div id="added-colors">
+    </div>
+</div>
+
+<!-- Задание 5 -->
+<div class="task5">
+    <h2>Task5</h2>
+    <h4>All questions:</h4>
+    <div id="qustions"></div>
+    <hr>
+    <div>
+        <h4>Add new question:</h4>
+        <form id="add-question">
+            <div class="flex">
+                <div>
+                    <label for="question">Question:</label>
+                </div>
+                <div>
+                    <input type="text" name="question" id="question">
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <label for="correct-answer">Correct answer:</label>
+                </div>
+                <div>
+                    <input type="text" name="correct-answer" id="correct-answer">
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                    <label for="wrong-answer">Wrong answer:</label>
+                </div>
+                <div>
+                    <input type="text" name="wrong-answer" id="wrong-answer">
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Add">
+            </div>
+        </form>
+    </div>
+</div>
